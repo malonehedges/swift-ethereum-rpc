@@ -9,8 +9,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "swift-ethereum-rpc",
-            targets: ["swift-ethereum-rpc"]
+            name: "EthereumRPC",
+            targets: ["EthereumRPC"]
         ),
     ],
     dependencies: [
@@ -19,15 +19,15 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "swift-ethereum-rpc",
+            name: "EthereumRPC",
             dependencies: [
                 .product(name: "SwiftJSONRPC", package: "SwiftJSONRPC"),
                 .product(name: "BigInt", package: "BigInt"),
             ]
         ),
         .testTarget(
-            name: "swift-ethereum-rpc-tests",
-            dependencies: ["swift-ethereum-rpc"]
+            name: "EthereumRPCTests",
+            dependencies: ["EthereumRPC"]
         ),
     ]
 )

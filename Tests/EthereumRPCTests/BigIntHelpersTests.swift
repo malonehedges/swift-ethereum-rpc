@@ -1,5 +1,5 @@
 import BigInt
-@testable import swift_ethereum_rpc
+@testable import EthereumRPC
 import XCTest
 
 final class BigIntHelpersTests: XCTestCase {
